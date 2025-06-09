@@ -1,10 +1,8 @@
-instal:#первое клонировании репозитория (или после удаления node_modules)
+install:
 	npm ci
-
-brain-games:#запуск игры без глобальной установки.
+brain-games:
 	node bin/brain-games.js
 publish:
 	npm publish --dry-run
-make lint:
-	npx eslint
-	
+lint:
+	npx eslint .
